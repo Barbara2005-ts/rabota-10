@@ -1,3 +1,5 @@
+
+
 plugins {
     alias(libs.plugins.android.application)
 }
@@ -5,6 +7,7 @@ plugins {
 android {
     namespace = "com.example.cwh"
     compileSdk = 34
+
 
     defaultConfig {
         applicationId = "com.example.cwh"
@@ -24,6 +27,9 @@ android {
                 "proguard-rules.pro"
             )
         }
+    }
+    viewBinding{
+        enable = true
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
